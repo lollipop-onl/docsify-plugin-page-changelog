@@ -2,17 +2,20 @@
   "name": "docsify-plugin-page-history",
   "version": "1.0.0",
   "repository": "https://github.com/lollipop-onl/docsify-plugin-page-history.git",
-  "type": "module",
   "license": "MIT",
+  "type": "module",
   "main": "./lib/index.js",
-  "packageManager": "pnpm@8.9.2",
   "files": [
     "lib"
   ],
   "scripts": {
-    "build": "rspack build"
+    "build": "rspack build",
+    "format": "prettier --write ."
   },
   "devDependencies": {
-    "@rspack/cli": "^0.3.8"
-  }
+    "@rspack/cli": "^0.3.8",
+    "prettier": "^3.0.3",
+    "prettier-plugin-packagejson": "^2.4.6"
+  },
+  "packageManager": "pnpm@8.9.2"
 }
