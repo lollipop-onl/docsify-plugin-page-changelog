@@ -1,0 +1,10 @@
+{
+  "name": "docsify-plugin-page-history",
+  "version": "1.0.0",
+  "repository": "https://github.com/lollipop-onl/docsify-plugin-page-history.git",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "files": [
+    "lib"
+  ]
+}
