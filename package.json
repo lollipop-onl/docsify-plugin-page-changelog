@@ -14,7 +14,8 @@
   },
   "config": {
     "access": "public",
-    "always-auth": true
+    "always-auth": true,
+    "registry-url": "https://registry.npmjs.org"
   },
   "dependencies": {
     "@rspack/cli": "^0.3.8",
