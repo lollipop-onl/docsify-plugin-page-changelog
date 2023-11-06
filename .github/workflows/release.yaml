@@ -8,16 +8,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: can-npm-publish
         run: npx can-npm-publish --verbose
-      - uses: actions/setup-node@v4
+      - uses: volta-cli/action@v3
         with:
-          node-version: 20
-      - name: enable pnpm
-        run: corepack enable
+          registry-url: https://registry.npmjs.org
+          always-auth: true
       - name: install dependencies
-        run: pnpm install --frozen-lockfile --prod
+        run: yarn install --frozen-lockfile --prod
       - name: build
-        run: pnpm build
+        run: yarn build
       - name: release
-        run: pnpm publish
+        run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
