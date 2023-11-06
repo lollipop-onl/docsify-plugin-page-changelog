@@ -12,15 +12,18 @@
     "build": "rspack build",
     "format": "prettier --write ."
   },
+  "dependencies": {
+    "htm": "^3.1.1",
+    "uhtml": "^3.2.2",
+    "vhtml": "^2.2.0"
+  },
   "devDependencies": {
     "@rspack/cli": "^0.3.8",
     "prettier": "^3.0.3",
     "prettier-plugin-packagejson": "^2.4.6"
   },
   "packageManager": "pnpm@8.9.2",
-  "dependencies": {
-    "htm": "^3.1.1",
-    "uhtml": "^3.2.2",
-    "vhtml": "^2.2.0"
+  "volta": {
+    "node": "20.9.0"
   }
 }
