@@ -12,6 +12,10 @@
     "build": "rspack build",
     "format": "prettier --write ."
   },
+  "config": {
+    "access": "public",
+    "always-auth": true
+  },
   "dependencies": {
     "@rspack/cli": "^0.3.8",
     "htm": "^3.1.1",
