@@ -4,6 +4,17 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  htm:
+    specifier: ^3.1.1
+    version: 3.1.1
+  uhtml:
+    specifier: ^3.2.2
+    version: 3.2.2
+  vhtml:
+    specifier: ^2.2.0
+    version: 2.2.0
+
 devDependencies:
   '@rspack/cli':
     specifier: ^0.3.8
@@ -581,6 +592,18 @@ packages:
       '@xtuc/long': 4.2.2
     dev: true
 
+  /@webreflection/mapset@1.0.1:
+    resolution: {integrity: sha512-cfHPwoviBs7Y/sewLQqE6Ic3XJfUr+LbNEYtR2uW4Od41y5Mg8TTQ8hUb3zBp3cepZTPpwhI6YMnjWk+olqO2w==}
+    dev: false
+
+  /@webreflection/uparser@0.2.4:
+    resolution: {integrity: sha512-4cYSODHAbjsIlvlTLffaN+QiFcNSLTYkRLOrDqpK+m6Bzqyjudq/xHTiSl4/LxeijcQE48nJQuaBnJcnizXxrA==}
+    dev: false
+
+  /@webreflection/uwire@1.2.1:
+    resolution: {integrity: sha512-3FIqIFzqij5NPWKWCQKJhfcRQpfS8RHAcceFosSDDiD6WrMHRAp3QoBqYt7dfrPhJ8Fg2b6T6Ea8ttClzVkZHA==}
+    dev: false
+
   /@xtuc/ieee754@1.2.0:
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==}
     dev: true
@@ -702,6 +725,10 @@ packages:
   /array-flatten@2.1.2:
     resolution: {integrity: sha512-hNfzcOV8W4NdualtqBFPyVO+54DSJuZGY9qT4pRroB6S9e3iiido2ISIC5h9R2sPJ8H3FHCIiEnsv1lPXO3KtQ==}
     dev: true
+
+  /async-tag@0.2.0:
+    resolution: {integrity: sha512-hNstPiQvxVVJdkBjfBsNb3zDEM2IUY3Xp7qaadEnhaGXq1/OFdS+TuwjEJxnIvZRm7e13KrPW74fIeDra7P5vw==}
+    dev: false
 
   /available-typed-arrays@1.0.5:
     resolution: {integrity: sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==}
@@ -1489,6 +1516,10 @@ packages:
       wbuf: 1.7.3
     dev: true
 
+  /htm@3.1.1:
+    resolution: {integrity: sha512-983Vyg8NwUE7JkZ6NmOqpCZ+sh1bKv2iYTlUkzlWmA5JD2acKoxd4KVxbMmxX/85mtfdnDmTFoNKcg5DGAvxNQ==}
+    dev: false
+
   /html-entities@2.4.0:
     resolution: {integrity: sha512-igBTJcNNNhvZFRtm8uA6xMY6xYleeDwn3PeBCkDz7tHttv4F2hsDI2aPgNERWzvRcNYHNT3ymRaQzllmXj4YsQ==}
     dev: true
@@ -1747,6 +1778,10 @@ packages:
     engines: {node: '>=6'}
     hasBin: true
     dev: true
+
+  /jsx2tag@0.3.1:
+    resolution: {integrity: sha512-S1ACW3N4yDiE49x9y9f2d+utB3Kci3A3Bx7wb2bK+5sl0B60lZM60pZ8L/A+FA55DYuAy2fgHu1i47yt+xgL9Q==}
+    dev: false
 
   /launch-editor@2.6.1:
     resolution: {integrity: sha512-eB/uXmFVpY4zezmGp5XtU21kwo7GBbKB+EQ+UZeWtGb9yAM5xt/Evk+lYH3eRNAtId+ej4u7TYPFZ07w4s7rRw==}
@@ -2619,6 +2654,32 @@ packages:
       mime-types: 2.1.35
     dev: true
 
+  /uarray@1.0.0:
+    resolution: {integrity: sha512-LHmiAd5QuAv7pU2vbh+Zq9YOnqVK0H764p2Ozinpfy9ka58OID4IsGLiXsitqH7n0NAIDxvax1A/kDXpii/Ckg==}
+    dev: false
+
+  /udomdiff@1.1.0:
+    resolution: {integrity: sha512-aqjTs5x/wsShZBkVagdafJkP8S3UMGhkHKszsu1cszjjZ7iOp86+Qb3QOFYh01oWjPMy5ZTuxD6hw5uTKxd+VA==}
+    dev: false
+
+  /uhandlers@0.7.0:
+    resolution: {integrity: sha512-MG6Q6Dc+xIfyFnHU8APpR916XWhnb+m30qVjPXxAmHUaVFmzUAcd6BCWws5LedyG43onCk1RRPNq0N02wcn4NA==}
+    dependencies:
+      uarray: 1.0.0
+    dev: false
+
+  /uhtml@3.2.2:
+    resolution: {integrity: sha512-dM14phAp9Zmr+sNpmz0c3OD1feCEE8Nm5UaKXyh01XkAFqBA/Dqsd39rBczqpCDYgwkShO0R8NKb10dYC+jiPg==}
+    dependencies:
+      '@webreflection/mapset': 1.0.1
+      '@webreflection/uparser': 0.2.4
+      '@webreflection/uwire': 1.2.1
+      async-tag: 0.2.0
+      jsx2tag: 0.3.1
+      udomdiff: 1.1.0
+      uhandlers: 0.7.0
+    dev: false
+
   /undici-types@5.25.3:
     resolution: {integrity: sha512-Ga1jfYwRn7+cP9v8auvEXN1rX3sWqlayd4HP7OKk4mZWylEmu3KzXDUGrQUN6Ol7qo1gPvB2e5gX6udnyEPgdA==}
     dev: true
@@ -2678,6 +2739,10 @@ packages:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
     dev: true
+
+  /vhtml@2.2.0:
+    resolution: {integrity: sha512-TPXrXrxBOslRUVnlVkiAqhoXneiertIg86bdvzionrUYhEuiROvyPZNiiP6GIIJ2Q7oPNVyEtIx8gMAZZE9lCQ==}
+    dev: false
 
   /watchpack@2.4.0:
     resolution: {integrity: sha512-Lcvm7MGST/4fup+ifyKi2hjyIAwcdI4HRgtvTpIUxBRhB+RFtUh8XtDOxUfctVCnhVi+QQj49i91OyvzkJl6cg==}
