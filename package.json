@@ -1,6 +1,6 @@
 {
   "name": "docsify-plugin-page-history",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/lollipop-onl/docsify-plugin-page-history.git",
   "license": "MIT",
   "type": "module",
