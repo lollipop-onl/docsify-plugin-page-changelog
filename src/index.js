@@ -21,7 +21,7 @@ const install = (hook, vm) => {
     const lastModified = history[0]?.date;
 
     const details = html`
-      <details class="plugin-page-history">
+      <details class="docsify-page-history">
         <summary>
           ${lastModified ? `Last modified at ${lastModified}` : "No history"}
         </summary>
